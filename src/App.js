@@ -12,6 +12,8 @@ class App extends Component {
   render() {
     return (
 	   <div className="wrapper">
+	   	 <Hello />
+	   	 <br />
 	     <SayFullName name="Artem" surname="Prygin" link="https://fb.com" />
 	     <SayFullName name="Lena" surname="Lenina" link="https://vk.com" />
 	     <SayFullName name="Ivan" surname="Ivanov" link="https://tickets.fifa.com/productList" />
@@ -29,5 +31,10 @@ function SayFullName(props) {
     )
 }
 
+function Hello() {
+	return (
+		<h1> Привет, бандиты </h1>
+		)
+}
 
 export default App;
